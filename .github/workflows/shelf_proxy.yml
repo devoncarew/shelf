@@ -1,0 +1,39 @@
+# Workflow file for package:shelf_proxy.
+
+name: Build
+permissions: read-all
+
+on:
+  pull_request:
+    - branches: [ main ]
+    - paths: [ 'pkgs/shelf_proxy/**/*' ]
+  push: { branches: [ main ] }
+  schedule: { cron: '0 0 * * 0' } # weekly
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: pkgs/shelf_proxy
+    strategy:
+      matrix:
+        sdk: [stable, dev] # {pkgs.versions}
+        include:
+          - sdk: stable
+            run-tests: true
+    steps:
+      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: dart-lang/setup-dart@6a218f2413a3e78e9087f638a238f6b40893203d
+        with:
+          - sdk: ${{matrix.sdk}}
+
+      - run: dart pub get
+
+      - run: dart analyze --fatal-infos
+
+      - run: dart format --output=none --set-exit-if-changed .
+        if: ${{matrix.run - tests}}
+
+      - run: dart test
+        if: ${{matrix.run - tests}}
