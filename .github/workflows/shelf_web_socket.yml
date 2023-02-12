@@ -6,7 +6,7 @@ permissions: read-all
 on:
   pull_request:
     - branches: [ main ]
-    - paths: 
+    - paths:
       - 'pkgs/shelf_web_socket/**/*'
       - '.github/workflows/shelf_web_socket.yml'
   push: { branches: [ main ] }

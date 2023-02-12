@@ -6,7 +6,7 @@ permissions: read-all
 on:
   pull_request:
     - branches: [ main ]
-    - paths: 
+    - paths:
       - 'pkgs/shelf_static/**/*'
       - '.github/workflows/shelf_static.yml'
   push: { branches: [ main ] }

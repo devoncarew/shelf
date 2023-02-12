@@ -6,7 +6,7 @@ permissions: read-all
 on:
   pull_request:
     - branches: [ main ]
-    - paths: 
+    - paths:
       - 'pkgs/shelf_test_handler/**/*'
       - '.github/workflows/shelf_test_handler.yml'
   push: { branches: [ main ] }

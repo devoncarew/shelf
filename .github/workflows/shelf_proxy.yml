@@ -6,7 +6,7 @@ permissions: read-all
 on:
   pull_request:
     - branches: [ main ]
-    - paths: 
+    - paths:
       - 'pkgs/shelf_proxy/**/*'
       - '.github/workflows/shelf_proxy.yml'
   push: { branches: [ main ] }
