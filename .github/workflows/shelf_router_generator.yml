@@ -5,10 +5,13 @@ on:
   pull_request:
     branches: [ master ]
     paths:
-      - 'pkgs/shelf_router_generator/**'
       - '.github/workflows/shelf_router_generator.yml'
+      - 'pkgs/shelf_router_generator/**'
   push:
     branches: [ master ]
+    paths:
+      - '.github/workflows/shelf_router_generator.yml'
+      - 'pkgs/shelf_router_generator/**'
   schedule:
     - cron: '0 0 * * 0' # weekly
 

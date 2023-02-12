@@ -5,10 +5,13 @@ on:
   pull_request:
     branches: [ master ]
     paths:
-      - 'pkgs/shelf_web_socket/**'
       - '.github/workflows/shelf_web_socket.yml'
+      - 'pkgs/shelf_web_socket/**'
   push:
     branches: [ master ]
+    paths:
+      - '.github/workflows/shelf_web_socket.yml'
+      - 'pkgs/shelf_web_socket/**'
   schedule:
     - cron: '0 0 * * 0' # weekly
 
