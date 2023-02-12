@@ -5,12 +5,12 @@ permissions: read-all
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
     paths:
       - 'pkgs/shelf_static/**'
       - '.github/workflows/shelf_static.yml'
   push:
-    branches: [ main ]
+    branches: [ master ]
   schedule:
     # “At 00:00 (UTC) on Sunday.”
     - cron: '0 0 * * 0'
