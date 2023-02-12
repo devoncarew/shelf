@@ -5,10 +5,15 @@ permissions: read-all
 
 on:
   pull_request:
-    - branches: [ main ]
-    - paths: [ 'pkgs/shelf_test_handler/**/*' ]
-  push: { branches: [ main ] }
-  schedule: { cron: '0 0 * * 0' } # weekly
+    branches: [ main ]
+    paths:
+      - 'pkgs/shelf_test_handler/**/*'
+      - '.github/workflows/shelf_test_handler.yml'
+  push:
+    branches: [ main ]
+  schedule:
+    # “At 00:00 (UTC) on Sunday.”
+    - cron: '0 0 * * 0'
 
 jobs:
   build:
