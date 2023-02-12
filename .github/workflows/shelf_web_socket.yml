@@ -6,7 +6,9 @@ permissions: read-all
 on:
   pull_request:
     - branches: [ main ]
-    - paths: [ 'pkgs/shelf_web_socket/**/*' ]
+    - paths: 
+      - 'pkgs/shelf_web_socket/**/*'
+      - '.github/workflows/shelf_web_socket.yml'
   push: { branches: [ main ] }
   schedule: { cron: '0 0 * * 0' } # weekly
 

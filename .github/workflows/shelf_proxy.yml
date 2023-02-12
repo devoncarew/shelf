@@ -6,7 +6,9 @@ permissions: read-all
 on:
   pull_request:
     - branches: [ main ]
-    - paths: [ 'pkgs/shelf_proxy/**/*' ]
+    - paths: 
+      - 'pkgs/shelf_proxy/**/*'
+      - '.github/workflows/shelf_proxy.yml'
   push: { branches: [ main ] }
   schedule: { cron: '0 0 * * 0' } # weekly
 

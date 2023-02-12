@@ -1,11 +1,14 @@
 # Workflow file for package:shelf.
+
 name: Build
 permissions: read-all
 
 on:
   pull_request:
     - branches: [ main ]
-    - paths: [ 'pkgs/shelf/**/*' ]
+    - paths: 
+      - 'pkgs/shelf/**/*'
+      - '.github/workflows/shelf.yml'
   push: { branches: [ main ] }
   schedule: { cron: '0 0 * * 0' } # weekly
 
