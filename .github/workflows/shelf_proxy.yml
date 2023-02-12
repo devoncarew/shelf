@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [ main ]
     paths:
-      - 'pkgs/shelf_proxy/**/*'
+      - 'pkgs/shelf_proxy/**'
       - '.github/workflows/shelf_proxy.yml'
   push:
     branches: [ main ]

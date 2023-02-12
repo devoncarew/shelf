@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [ main ]
     paths:
-      - 'pkgs/shelf_static/**/*'
+      - 'pkgs/shelf_static/**'
       - '.github/workflows/shelf_static.yml'
   push:
     branches: [ main ]

@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [ main ]
     paths:
-      - 'pkgs/shelf_web_socket/**/*'
+      - 'pkgs/shelf_web_socket/**'
       - '.github/workflows/shelf_web_socket.yml'
   push:
     branches: [ main ]

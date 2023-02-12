@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [ main ]
     paths:
-      - 'pkgs/shelf_router_generator/**/*'
+      - 'pkgs/shelf_router_generator/**'
       - '.github/workflows/shelf_router_generator.yml'
   push:
     branches: [ main ]

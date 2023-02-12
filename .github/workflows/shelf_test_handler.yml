@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [ main ]
     paths:
-      - 'pkgs/shelf_test_handler/**/*'
+      - 'pkgs/shelf_test_handler/**'
       - '.github/workflows/shelf_test_handler.yml'
   push:
     branches: [ main ]
