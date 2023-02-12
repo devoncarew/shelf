@@ -5,10 +5,13 @@ on:
   pull_request:
     branches: [ master ]
     paths:
-      - 'pkgs/shelf_test_handler/**'
       - '.github/workflows/shelf_test_handler.yml'
+      - 'pkgs/shelf_test_handler/**'
   push:
     branches: [ master ]
+    paths:
+      - '.github/workflows/shelf_test_handler.yml'
+      - 'pkgs/shelf_test_handler/**'
   schedule:
     - cron: '0 0 * * 0' # weekly
 
@@ -39,5 +42,3 @@ jobs:
 
       - run: dart test
         if: ${{matrix.run-tests}}
-
-
