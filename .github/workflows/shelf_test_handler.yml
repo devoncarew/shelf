@@ -11,9 +11,9 @@ on:
       - '.github/workflows/shelf_test_handler.yml'
   push:
     branches: [ main ]
-  # weekly
   schedule:
-    cron: '0 0 * * 0'
+    # “At 00:00 (UTC) on Sunday.”
+    - cron: '0 0 * * 0'
 
 jobs:
   build:
