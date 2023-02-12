@@ -5,12 +5,15 @@ permissions: read-all
 
 on:
   pull_request:
-    - branches: [ main ]
-    - paths:
+    branches: [ main ]
+    paths:
       - 'pkgs/shelf_router/**/*'
       - '.github/workflows/shelf_router.yml'
-  push: { branches: [ main ] }
-  schedule: { cron: '0 0 * * 0' } # weekly
+  push:
+    branches: [ main ]
+  # weekly
+  schedule:
+    cron: '0 0 * * 0'
 
 jobs:
   build:
