@@ -46,5 +46,3 @@ See reference documentation of `Router` class for more information.
 [creativebracket.com]: https://creativebracket.com/
 [1]: https://www.youtube.com/watch?v=v7FhaV9e3yY
 [2]: https://github.com/graphicbeacon/shelf_router_api_tutorial
-
-
