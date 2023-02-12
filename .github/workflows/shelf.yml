@@ -1,6 +1,4 @@
-# Workflow file for package:shelf.
-
-name: Build
+name: package:shelf
 permissions: read-all
 
 on:
@@ -12,8 +10,7 @@ on:
   push:
     branches: [ master ]
   schedule:
-    # “At 00:00 (UTC) on Sunday.”
-    - cron: '0 0 * * 0'
+    - cron: '0 0 * * 0' # weekly
 
 jobs:
   build:
