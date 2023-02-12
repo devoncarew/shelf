@@ -4,6 +4,7 @@
 `shelf_static` is a `Handler` for the Dart `shelf` package.
 
 ### Example
+
 ```dart
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_static/shelf_static.dart';
