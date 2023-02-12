@@ -2,24 +2,32 @@
 
 'package:shelf':
   - pkgs/shelf/**/*
+  - .github/workflows/shelf.yml
 
 'package:shelf_packages_handler':
   - pkgs/shelf_packages_handler/**/*
+  - .github/workflows/shelf_packages_handler.yml
 
 'package:shelf_proxy':
   - pkgs/shelf_proxy/**/*
+  - .github/workflows/shelf_proxy.yml
 
 'package:shelf_router':
   - pkgs/shelf_router/**/*
+  - .github/workflows/shelf_router.yml
 
 'package:shelf_router_generator':
   - pkgs/shelf_router_generator/**/*
+  - .github/workflows/shelf_router_generator.yml
 
 'package:shelf_static':
   - pkgs/shelf_static/**/*
+  - .github/workflows/shelf_static.yml
 
 'package:shelf_test_handler':
   - pkgs/shelf_test_handler/**/*
+  - .github/workflows/shelf_test_handler.yml
 
 'package:shelf_web_socket':
   - pkgs/shelf_web_socket/**/*
+  - .github/workflows/shelf_web_socket.yml
